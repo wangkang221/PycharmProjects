@@ -1,0 +1,27 @@
+DEB [20220707-09:42:48.600] thr=1   paramiko.transport: starting thread (client mode): 0x24402e0
+DEB [20220707-09:42:48.602] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEB [20220707-09:42:48.606] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0--
+INF [20220707-09:42:48.607] thr=1   paramiko.transport: Connected (version 2.0, client -)
+DEB [20220707-09:42:48.607] thr=1   paramiko.transport: === Key exchange possibilities ===
+DEB [20220707-09:42:48.607] thr=1   paramiko.transport: kex algos: diffie-hellman-group-exchange-sha256, diffie-hellman-group1-sha1, ecdh-sha2-nistp521, ecdh-sha2-nistp384, ecdh-sha2-nistp256, diffie-hellman-group-exchange-sha1, sm2kep-sha2-nistp256, diffie-hellman-group14-sha1
+DEB [20220707-09:42:48.607] thr=1   paramiko.transport: server key: ssh-dss, ssh-rsa, ecdsa-sha2-nistp521
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: client encrypt: AEAD_AES_256_GCM, aes256-gcm@openssh.com, AEAD_AES_128_GCM, aes128-gcm@openssh.com, aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes128-cbc, 3des-cbc
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: server encrypt: AEAD_AES_256_GCM, aes256-gcm@openssh.com, AEAD_AES_128_GCM, aes128-gcm@openssh.com, aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes128-cbc, 3des-cbc
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: client mac: hmac-sha2-512, hmac-sha2-256, hmac-sha2-256-96, hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: server mac: hmac-sha2-512, hmac-sha2-256, hmac-sha2-256-96, hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: client compress: none, zlib
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: server compress: none, zlib
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: client lang: <none>
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: server lang: <none>
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: kex follows: False
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: === Key exchange agreements ===
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: Kex: ecdh-sha2-nistp256
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: HostKey: ecdsa-sha2-nistp521
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: Cipher: aes128-ctr
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: MAC: hmac-sha2-256
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: Compression: none
+DEB [20220707-09:42:48.609] thr=1   paramiko.transport: === End of kex handshake ===
+DEB [20220707-09:42:48.932] thr=1   paramiko.transport: kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+DEB [20220707-09:42:48.932] thr=1   paramiko.transport: Switch to new keys ...
+INF [20220707-09:43:48.615] thr=1   paramiko.transport: Disconnect (code 2): The connection is closed by SSH Server
+

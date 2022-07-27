@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function decode(){
+            $.ajax({
+                url:"http://10.21.36.50:8899/decode",
+                type:"post",
+                dataType:"json",
+
+                //data为要传递给后端的数据，使用JSON.stringify()转换为json格式
+                data:JSON.stringify({
+                        version:  $("#version").val(),
+                        sha_code: $("#sha_code").val(),
+                        code: $("#code").val()
+                    }),
+                success:function (data){
+                    console.log(data)
+                    console.log(data.code)
+                    $("#code").val(data.code)
+                    alert("传输数据成功")
+                },
+                error:function (){
+                    alert("传输数据失败!")
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+    <div class="panel panel-primary">
+        <div class="panel-heading">SecureCRT解密<span id="phr"></span></div>
+        <div class="panel-body">
+            <div class="row" style="padding: 5px 0">
+                <div class="col-sm-4 form-inline">
+                    <label>密文版本</label>
+                    <input type="text" class="form-control" id="version" value="-v2" size="36">
+                </div>
+                <div class="col-sm-4 form-inline">
+                    <div class="col-sm-4 form-inline">
+                        <label>输入密文</label>
+                        <input type="text" class="form-control" id="sha_code" value='"Password V2"=02:后面的填入此处' size="36">
+                    </div>
+                </div>
+                <p class="text-center">
+                    <button class="btn btn-primary" type="submit" id="btn-send" onclick="decode()">执行</button>
+                </p>
+                <div class="col-sm-4 form-inline">
+                    <div class="col-sm-4 form-inline">
+                        <label>解密结果</label>
+                        <input type="text" class="form-control" id="code" value="" size="36">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

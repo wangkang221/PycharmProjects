@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function login(){
+            $.ajax({
+                url:"http://10.21.36.50:8899/login",
+                type:"post",
+                dataType:"json",
+
+                //data为要传递给后端的数据，使用JSON.stringify()转换为json格式
+                data:JSON.stringify({
+                        userId:   $("#userId").val(),
+                        password: $("#password").val()
+                    }),
+                success:function (data){
+                    alert("登录成功")
+                    console.log(data)
+                    console.log(data.status)
+                    console.log(data.time)
+                },
+                error:function (){
+                    alert("登录失败!!!")
+                    console.log("***********")
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+<div>
+    <input type="text" id="userId">
+</div>
+<div>
+    <input type="password" id="password">
+</div>
+<button onclick="login()">login</button>
+</body>
+</html>
