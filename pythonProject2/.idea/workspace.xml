@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aed36b7e-0542-41ce-9b7a-26b448dfcb14" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject3/.idea/pythonProject3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject5/.idea/pythonProject5.iml" afterDir="false" />
+    <list default="true" id="aed36b7e-0542-41ce-9b7a-26b448dfcb14" name="变更" comment="1">
+      <change afterPath="$PROJECT_DIR$/../pythonProject1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject6/.idea/404数据构造.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject7/.idea/pythonProject7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject7/base_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject7/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject7/pytest.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject7/test_fprws_0001.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject7/test_fprws_0002.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject7/test_fprws_0003.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject1/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_server.log" beforeDir="false" afterPath="$PROJECT_DIR$/demo_server.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject3/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject3/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject4/decode/python3/decode.html" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject4/decode/python3/decode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject4/decode/python3/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject4/decode/python3/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +103,14 @@
       <option name="presentableId" value="Default" />
       <updated>1656555821954</updated>
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1659668703481</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659668703481</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,5 +123,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
 </project>

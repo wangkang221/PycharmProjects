@@ -1,28 +1,9 @@
 import re
-transPattern = re.compile("([0-9]+)\\s+packet\\(s\\)\\s+transmitted")
+transPattern = re.compile("type=([0-9]+)")
 receivedPattern = re.compile("([0-9]+)\\s+packet\\(s\\)\\s+received")
 lossPattern = re.compile("([0-9]+\\.[0-9]+)\\%\\s+packet\\s+loss")
 rttPattern = re.compile("(min.*?ms)")
-strs = '''[~HUAWEI]ping ipv6 vpn-instance b 2000::1
-  PING 2000::1 : 56  data bytes, press CTRL_C to break
-    Reply from 2000::1
-    bytes=56 Sequence=1 hop limit=64 time=7 ms
-    Reply from 2000::1
-    bytes=56 Sequence=2 hop limit=64 time=5 ms
-    Reply from 2000::1
-    bytes=56 Sequence=3 hop limit=64 time=6 ms
-    Reply from 2000::1
-    bytes=56 Sequence=4 hop limit=64 time=6 ms
-    Reply from 2000::1
-    bytes=56 Sequence=5 hop limit=64 time=5 ms
-
-  --- 2000::1 ping statistics---
-    5 packet(s) transmitted
-    5 packet(s) received
-    0.00% packet loss
-    round-trip min/avg/max=5/5/7 ms
-
-[~HUAWEI]'''
+strs = '''[dnsId=2017081799952033032, type=93, cmdUuid=20220930134958, resultCode=2, msgInfo=指令执行状态：7]'''
 
 strs1 = '''BJ-BJ-HCYYT-DSW-1.MAN.S4608#ping 106.120.252.110
  Pinging 106.120.252.110 with 64 bytes of data:

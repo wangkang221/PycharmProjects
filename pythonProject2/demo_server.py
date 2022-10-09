@@ -116,7 +116,7 @@ DoGSSAPIKeyExchange = True
 try:
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    sock.bind(("10.21.36.50", 2200))
+    sock.bind(("10.21.178.243", 2200))
 except Exception as e:
     print("*** Bind failed: " + str(e))
     traceback.print_exc()

@@ -65,4 +65,4 @@ def decode():
     return jsonify(info)
 
 if __name__ == '__main__':
-    app.run(port=8899, host='10.21.36.50',debug=True)  # 此处可自定义使用端口
+    app.run(port=8899, host='10.21.16.119',debug=True)  # 此处可自定义使用端口

@@ -1,0 +1,19 @@
+fprws:
+  host: 10.21.17.20
+  port: 17020
+  user: root
+  password: '!QAZ6yhn*IKK'
+
+order_log:
+  host: 10.21.41.76
+  port: 22022
+  user: root
+  password: '!QAZ6yhn*IKK'
+  path: /home/dcp/404/
+
+access_log:
+  host: 10.21.41.76
+  port: 22022
+  user: root
+  password: '!QAZ6yhn*IKK'
+  path: /usr/local/openresty/nginx/logs/
