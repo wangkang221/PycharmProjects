@@ -44,7 +44,7 @@ class BaseApi:
         commod = cmd
         cmd += '\r'
         # 通过命令执行提示符来判断命令是否执行完成
-        p = re.compile(r']#')
+        p = re.compile(r']#|>')
         result = ''
         # 发送要执行的命令
         channel.send(cmd)

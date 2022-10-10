@@ -17,3 +17,12 @@ access_log:
   user: root
   password: '!QAZ6yhn*IKK'
   path: /usr/local/openresty/nginx/logs/
+
+redis:
+  host: 10.21.17.20
+  port: 17020
+  user: root
+  password: '!QAZ6yhn*IKK'
+  auth: admin@123
+  db: 6
+  path: /home/aisddi/redis6379/redis/
