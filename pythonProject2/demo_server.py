@@ -56,15 +56,18 @@ class Server(paramiko.ServerInterface):
         if kind == "session":
             return paramiko.OPEN_SUCCEEDED
         return paramiko.OPEN_FAILED_ADMINISTRATIVELY_PROHIBITED
-
+    global loginuser
+    global loginpass
+    loginuser = "huawei"
+    loginpass = "Root@123"
     def check_auth_password(self, username, password):
-        if (username == "huawei") and (password == "Root@123"):
+        if (username == loginuser) and (password == loginpass):
             return paramiko.AUTH_SUCCESSFUL
         return paramiko.AUTH_FAILED
 
     def check_auth_publickey(self, username, key):
         print("Auth attempt with key: " + u(hexlify(key.get_fingerprint())))
-        if (username == "huawei") and (key == self.good_pub_key):
+        if (username == loginuser) and (key == self.good_pub_key):
             return paramiko.AUTH_SUCCESSFUL
         return paramiko.AUTH_FAILED
 
@@ -116,14 +119,16 @@ DoGSSAPIKeyExchange = True
 try:
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    sock.bind(("10.21.178.243", 2200))
+    server_ip = "10.21.178.243"
+    server_port = 2200
+    sock.bind((server_ip, server_port))
 except Exception as e:
     print("*** Bind failed: " + str(e))
     traceback.print_exc()
     sys.exit(1)
 try:
     sock.listen(100)
-    print("Listening for connection ...")
+    print("Listening for connection ... "+server_ip+" "+str(server_port)+" "+loginuser+" "+loginpass)
 except Exception as e:
     print("*** Listen failed: " + str(e))
     traceback.print_exc()
@@ -194,6 +199,8 @@ def deal(sock,addr):
                  chan.send("\r\n" + bgpv6_routing_tablie)
              elif "DIS current-configuration" in re:
                  chan.send("\r\n" + cfg)
+             elif "DIS 123" in re:
+                 chan.send("\r\n" + str(123))
              elif "exit" == re or "quit" == re:
                  chan.close()
 

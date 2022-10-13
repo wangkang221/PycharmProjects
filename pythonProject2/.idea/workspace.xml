@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aed36b7e-0542-41ce-9b7a-26b448dfcb14" name="变更" comment="1">
-      <change afterPath="$PROJECT_DIR$/../pythonProject1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject6/.idea/404数据构造.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject7/.idea/pythonProject7.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject7/base_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject7/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject7/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject7/test_fprws_0001.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject7/test_fprws_0002.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject7/test_fprws_0003.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject1/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/test_baidu.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/test_baidu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_server.log" beforeDir="false" afterPath="$PROJECT_DIR$/demo_server.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject4/decode/python3/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject4/decode/python3/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject7/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject7/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject7/pytest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject7/pytest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject7/test_fprws_0001.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject7/test_fprws_0001.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
